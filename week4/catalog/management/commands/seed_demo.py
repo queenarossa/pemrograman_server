@@ -13,7 +13,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         lecturer = User.objects.get(username="suprayogi")
-        student = User.objects.get(username="Fauzan Arif")
+        student = User.objects.get(username="fauzan")
 
         course, created = Course.objects.get_or_create(
             code="PSS01",
